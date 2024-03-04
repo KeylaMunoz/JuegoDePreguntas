@@ -4,20 +4,20 @@ body {
   background-size: cover;
 }
 
-lo puse para despues utilizarlo cuando usemos DOM main .contenedor {
+main .contenedor {
   background-color: rgba(255, 255, 255, 0.916);
   margin: 5vw;
   padding: 5vw;
 }
-lo puse para despues utilizarlo cuando usemos DOM main .contenedor .titulo {
+main .contenedor .titulo {
   text-align: center;
   margin-top: 0;
 }
-lo puse para despues utilizarlo cuando usemos DOM main .contenedor form {
+main .contenedor form {
   text-align: left;
   margin-left: 20%;
 }
-lo puse para despues utilizarlo cuando usemos DOM main .contenedor form input {
+main .contenedor form input {
   font-size: larger;
   width: 60%;
   color: rgb(153, 153, 153);
@@ -26,7 +26,7 @@ lo puse para despues utilizarlo cuando usemos DOM main .contenedor form input {
   border: none;
   border-bottom: 1.5px solid rgb(153, 153, 153);
 }
-lo puse para despues utilizarlo cuando usemos DOM main .contenedor form .enviar {
+main .contenedor form .enviar {
   margin: 2vw;
 }
 

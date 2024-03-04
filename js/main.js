@@ -52,16 +52,16 @@ function Puntaje (puntaje, nivel ){
         alert(`NIVEL ${nivel}  \n ${nombreDeUsuario} has obtenido 🌟🌟🌟 estrellas \n¡¡FELICIDADES!! HAS LOGRADO LA MEJOR PUNTUACIÓN 🏆`);
     };
 }
+
+//preguntas NIVEL 1
 let pregunta1 = new RespuestaCorrecta (puntajes, 'nivel1', "¿Cuales son los colores primarios? \n1- Amarillo, Rojo y Verde \n2- Azul, Rojo y Amarillo  \n3- Amarillo, Azul y Violeta", 2, "\nLos colores primarios son el azul, rojo y amarillo");
 let pregunta2 = new RespuestaCorrecta (puntajes, 'nivel1', "¿Qué elemento principal necesitan las plantas para sobrevivir? \n1- Agua \n2- Sombra \n3- Tierra", 1, "\nLas plantas no pueden sobrevivir sin agua");
 let pregunta3 = new RespuestaCorrecta (puntajes, 'nivel1', "¿Cuál de estos animales es invertebrado? \n1- Serpiente \n2- Tortuga \n3- Caracol", 3, "\nLos caracoles son invertebrados");
 
-
 Puntaje(puntajes.nivel1,"1");
 
 //Preguntas NIVEL 2
-alert("NIVEL 2 \n=¿Estas listo? ¡Comencemos! 🚀")
-let puntosNivel2 = 0;
+alert("NIVEL 2 \n¿Estas listo? ¡Comencemos! 🚀")
 
 let pregunta4 = new RespuestaCorrecta (puntajes, 'nivel2', "¿Cuántos meses del año comienzan con la letra M? \n1- Tres \n2- Cinco \n3- Dos", 3, "\nSon dos: Marzo y Mayo");
 let pregunta5 = new RespuestaCorrecta (puntajes, 'nivel2', "¿Cuantos planetas conforman nuestro Sistema Solar? \n1- Diez \n2- Ocho \n3- Nueve", 2, "\nSon 8: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.");
