@@ -1,0 +1,30 @@
+
+// este estilo
+ lo puse para despues utilizarlo cuando usemos DOM
+main{
+    .contenedor{
+        background-color: rgba(255, 255, 255, 0.916);
+        margin: 5vw;
+        padding: 5vw;
+        .titulo{
+            text-align: center;
+            margin-top: 0;
+        }
+        form{
+            text-align: left;
+            margin-left: 20%;
+            input{
+                font-size: larger;
+                width: 60%;
+                color: rgb(153, 153, 153);
+                margin: 2vw 1vw;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1.5px solid rgb(153, 153, 153);
+            }
+            .enviar{
+                margin: 2vw;
+            }
+        }
+    }
+}
