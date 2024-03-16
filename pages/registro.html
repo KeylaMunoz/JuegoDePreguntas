@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- MAIN INDEX -->
+    <main>
+        <div class="contenedor">
+            <h1 class="titulo1"> PREGUNTADOS </h1>
+            <H2 class="titulo2"> Completa con tus datos:</H2>
+            <form id="formulario" class="datos">
+                <div class="contenedorDatos">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" autocomplete="username" required>
+                    <br>
+                    <br>
+                    <label for="usuario" class="form-label">Usuario:</label>
+                    <br>
+                    <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+                    <br>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="password">Contraseña:</label>
+                    <br>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
+                </div>
+                <div class="contenedorSelec">
+                    <br>
+                    <button class="boton" id="registrar" type="submit">Crear cuenta</button>
+                    <br>
+                    <span class="registrar">¿Ya tienes cuenta? <a href="../index.html">Ingresa</a></span>
+                </div>
+            </form>
+        </div>   
+    </main>
+
+
+    <script src="../js/regitro.js"></script>
+</body>
+</html>

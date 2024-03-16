@@ -7,23 +7,38 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="./pages/usuario.html"> Usuario</a>
-                <a href="./pages/niveles.html">Niveles</a>
-            </nav>
-        </div>
-    </header>
-
     <!-- MAIN INDEX -->
     <main>
-        <h1> PREGUNTADOS </h1>
-        <H2> ¡Bienvenidos al mejor juego de preguntas!</H2>
-        <a href="./pages/juego.html">¡Comencemos!</a>    
+        <div class="contenedor">
+            <h1 class="titulo1"> PREGUNTADOS </h1>
+            <H2 class="titulo2"> ¡Bienvenidos al mejor juego de preguntas!</H2>
+            <form id="formulario" class="datos">
+                <div class="contenedorDatos">
+                    <label for="datoUsuario" class="form-label">Usuario:</label>
+                    <br>
+                    <input type="text" id="datoUsuario" name="datoUsuario" required>
+                    <br>
+                    <br>
+                    <label for="datoPassword">Contraseña:</label>
+                    <br>
+                    <input type="password" id="datoPassword" name="datoPassword" required>
+                    <br>
+                    <input class="checkbox" type="checkbox" id="checkbox">
+                    <label for="checkbox">Recordar</label>
+                    <br>
+                </div>
+                <div class="contenedorSelec">
+                    <button class="boton" id="ingresar" type="submit">Ingresar</button>
+                    <br>
+                    <p class="mensaje"></p>
+                    <span class="registrar">¿No tienes cuenta? <a href="./pages/registro.html">Registrate</a></span> 
+                </div>
+            </form>
+        </div>   
     </main>
 
-   
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/regitro.js"></script> -->
 </body>
 </html>

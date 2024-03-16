@@ -1,0 +1,79 @@
+main{
+    .contenedor{
+        background-color: rgba(255, 255, 255, 0.628);
+        margin: auto;
+        margin-top: 3%;
+        padding: 2vw;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        border-radius: 20px;
+        .titulo1{
+            font-size: 3.5vw;
+            margin: 0;
+        }
+        .titulo2{
+            font-size: 2.3vw;
+            margin: 1vw 0vw 2vw 0vw;
+
+
+        }
+        form{
+            text-align: left;
+            // margin-left: 28%;
+            input{
+                font-size: larger;
+                width: 60%;
+                color: #4c136c;
+                font-weight: 600;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1.5px solid #761f89;
+                &:focus,
+                &:hover {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1.5px solid #761f89;
+                    outline: none;
+                }
+            }
+            label{
+                font-family: sans-serif;
+                color: #761f89;
+                text-align: left;
+                font-size: large;
+            }
+            .checkbox{
+                width: auto;
+                margin: 3% 0%;
+            }
+            .boton{
+                width: 20%;
+                margin: 0%;
+                padding: 0.7vw;
+                color: white;
+                font-size: large;
+                background: linear-gradient(45deg, #331cb2, #761f89);
+                border: none;
+                border-radius: 7px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #7f2e9a;
+                    transform: rotateY(360deg);
+                    transition: transform 0.5s ease;
+                    background: linear-gradient(45deg, #331cb2, #761f89);
+                }
+            }
+            .registrar{
+                font-family: sans-serif;
+                font-size: small;
+            }
+        }
+        .contenedorDatos{
+            margin-left: 28%;
+        }
+        .contenedorSelec{
+            text-align: center;
+        }
+    }
+}

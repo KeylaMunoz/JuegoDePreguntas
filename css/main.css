@@ -1,33 +1,103 @@
 /*Estilos globales*/
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 body {
-  background-image: url(../../images/preguntas\ pastel.jpg);
+  background-image: url(../../images/fondo3.png);
   background-size: cover;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main .contenedor {
-  background-color: rgba(255, 255, 255, 0.916);
-  margin: 5vw;
-  padding: 5vw;
-}
-main .contenedor .titulo {
+  background-color: rgba(255, 255, 255, 0.628);
+  margin: auto;
+  margin-top: 3%;
+  padding: 2vw;
+  width: 50%;
+  height: 50%;
   text-align: center;
-  margin-top: 0;
+  border-radius: 20px;
+}
+main .contenedor .titulo1 {
+  font-size: 3.5vw;
+  margin: 0;
+}
+main .contenedor .titulo2 {
+  font-size: 2.3vw;
+  margin: 1vw 0vw 2vw 0vw;
 }
 main .contenedor form {
   text-align: left;
-  margin-left: 20%;
 }
 main .contenedor form input {
   font-size: larger;
   width: 60%;
-  color: rgb(153, 153, 153);
-  margin: 2vw 1vw;
+  color: #4c136c;
+  font-weight: 600;
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px solid rgb(153, 153, 153);
+  border-bottom: 1.5px solid #761f89;
 }
-main .contenedor form .enviar {
-  margin: 2vw;
+main .contenedor form input:focus, main .contenedor form input:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #761f89;
+  outline: none;
+}
+main .contenedor form label {
+  font-family: sans-serif;
+  color: #761f89;
+  text-align: left;
+  font-size: large;
+}
+main .contenedor form .checkbox {
+  width: auto;
+  margin: 3% 0%;
+}
+main .contenedor form .boton {
+  width: 20%;
+  margin: 0%;
+  padding: 0.7vw;
+  color: white;
+  font-size: large;
+  background: linear-gradient(45deg, #331cb2, #761f89);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .contenedor form .boton:hover {
+  background-color: #7f2e9a;
+  transform: rotateY(360deg);
+  transition: transform 0.5s ease;
+  background: linear-gradient(45deg, #331cb2, #761f89);
+}
+main .contenedor form .registrar {
+  font-family: sans-serif;
+  font-size: small;
+}
+main .contenedor .contenedorDatos {
+  margin-left: 28%;
+}
+main .contenedor .contenedorSelec {
+  text-align: center;
+}
+
+main .contenedor .boton {
+  width: 20%;
+  margin: 0%;
+  padding: 0.7vw;
+  color: white;
+  font-size: large;
+  background: linear-gradient(45deg, #331cb2, #761f89);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .contenedor .boton:hover {
+  background-color: #7f2e9a;
+  transform: rotateY(360deg);
+  transition: transform 0.5s ease;
+  background: linear-gradient(45deg, #331cb2, #761f89);
 }
 
 /*# sourceMappingURL=main.css.map */
