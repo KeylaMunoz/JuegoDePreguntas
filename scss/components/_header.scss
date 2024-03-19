@@ -2,9 +2,16 @@ header{
     div{
         .contenedorNav{
             .navegador{
+                display: flex;
+                list-style: none;
+                margin-left: 10%;
+                margin-top: 15px;
                 li{
                     a{
                         text-align: center;
+                        padding: 2vw 9vw;
+                        text-decoration: none;
+                        
                     }
                 }
             }

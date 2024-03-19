@@ -55,13 +55,10 @@ main{
                 font-size: large;
                 background: linear-gradient(45deg, #331cb2, #761f89);
                 border: none;
-                border-radius: 7px;
+                border-radius: 50px;
                 cursor: pointer;
                 &:hover{
-                    background-color: #7f2e9a;
-                    transform: rotateY(360deg);
-                    transition: transform 0.5s ease;
-                    background: linear-gradient(45deg, #331cb2, #761f89);
+                    transform: scale(1.1);
                 }
             }
             .registrar{

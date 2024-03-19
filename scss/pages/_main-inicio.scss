@@ -1,21 +1,26 @@
 main{
-    .contenedor{
-        .boton{
-            width: 20%;
-                margin: 0%;
-                padding: 0.7vw;
-                color: white;
-                font-size: large;
+    div{
+        .posicionBoton{
+            margin-top: 60vh;
+            margin-left: 38vw;
+            width: auto;
+            padding:  0.5vw 5vw;
+            color: white;
+            font-size: 2.5vw;
+            font-family: inherit;
+            background: linear-gradient(45deg, #331cb2, #761f89);
+            border: none;
+            cursor: pointer;
+            border-radius: 40px;
+            &:hover{
+                background-color: #7f2e9a;
+                transform: rotateY(360deg);
                 background: linear-gradient(45deg, #331cb2, #761f89);
-                border: none;
-                border-radius: 7px;
-                cursor: pointer;
-                &:hover{
-                    background-color: #7f2e9a;
-                    transform: rotateY(360deg);
-                    transition: transform 0.5s ease;
-                    background: linear-gradient(45deg, #331cb2, #761f89);
-                }
+                box-shadow: 0 0 25px 3px rgba(197, 194, 204, 0.7);
+                transition: 0.5s;
+                
+                
+            }
         }
     }
 }
