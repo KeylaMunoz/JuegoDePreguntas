@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!-- link librelia Sweetalert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- link libreria AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  CSS del proyecto -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body style="background-image: url(../images/fondo1.png);">
@@ -12,13 +17,13 @@
             <nav class="contenedorNav">
                 <ul class="navegador">
                     <li>
-                        <a href="#">Inicio</a>
+                        <a class="botonNav" href="#">Inicio</a>
                     </li>
                     <li>
-                        <a href="./usuario.html">Usuario</a>
+                        <a class="botonNav" href="./usuario.html">Usuario</a>
                     </li>
                     <li>
-                        <a href="./niveles.html">Niveles</a>
+                        <a class="botonNav" href="../index.html">Salir</a>
                     </li>
                 </ul>
             </nav>
@@ -26,13 +31,40 @@
     </header>
 
     <!-- MAIN INDEX -->
-    <!-- pagina para que el jugador pueda interactual con su perfil, ver los niveles o comenzar a jugar-->
+    <!-- pagina para que el jugador pueda interactual con su perfil o comenzar a jugar-->
     <main>
-        <div class="">
-            <button class="posicionBoton">Comenzar</button>
+        <div class="contenedorInicio">
+            <button data-aos="flip-right" class="posicionBoton">Comenzar</button>
+            <div class="wrapper">
+                <div class="space">
+                  <div class="loading"></div>
+                </div>
+              </div>
+        </div>
+        <div class="juego">
+            <button id="botonSalir">X</button>
+            <div class="contenedorJuego">
+                <form class="formularioPreguntas">
+                    <div class="contenedorPreguntas">
+                        <p class="preguntaPrincipal"></p>
+                        <button type="button" class="botonResp respuesta1" ></button>
+                        <button type="button" class="botonResp respuesta2" ></button>
+                        <button type="button" class="botonResp respuesta3" ></button>
+                        <button type="button" class="botonResp respuesta4" ></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
+    <!-- libreria Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
+    <!-- libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+    <!-- JS del proyecto -->
     <script src="../js/inicio.js" ></script>
 </body>
 </html>

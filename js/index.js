@@ -5,39 +5,38 @@ ingresoIn = document.querySelector('#ingresar'),
 msnIn = document.querySelector('.mensaje'),
 form = document.querySelector('#formIndex');
 
-//funciones
+//verificador de usuario existente o inexistente
+let verificacionUsuario;
 function inicioSesion(arr){
-    let verificacionUsuario = arr.find((usuario) => {
+    verificacionUsuario = arr.find((usuario) => {
         return usuario.usuario === usuarioIn.value && usuario.password === passIn.value;
     });
     
-    // verificacionUsuario = console.log("correcto") ||  (msnIn.innerHTML = "Usuario Inexistente");
-
-    if(verificacionUsuario){
-        console.log("ingresaste");
-        location.href= "../pages/inicio.html";
-    }else{ 
-        //verificar si funciona con const mensaje
-        console.log("NO ingresaste");
-        msnIn.innerHTML = "Usuario Inexistente";
+    if (verificacionUsuario) {
+        localStorage.setItem('verificacionUsuario', JSON.stringify(verificacionUsuario));
+        location.href = "../pages/inicio.html";
+    } else {
+        msnIn.innerHTML = "⛔Usuario Inexistente⛔";
     }
 
 }
 
+//recuperamos los datos desde JSON
+let usRecuperado ;
 function recuperarLS(){
-    const usRecuperado = JSON.parse(localStorage.getItem("usuarios"));
-    console.log(usRecuperado);
+    usRecuperado = JSON.parse(localStorage.getItem("usuarios"));
     return usRecuperado;
 }
-//ejecucion de funciones
-const usuariosLS = recuperarLS();
-console.log(usuariosLS);
 
+let usuariosLS = recuperarLS();
 
-form.addEventListener('submit', (e) => { 
+//capturamos datos del usuario
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     inicioSesion(usuariosLS);
 })
+
+
 
 
 

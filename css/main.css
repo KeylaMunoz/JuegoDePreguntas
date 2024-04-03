@@ -8,47 +8,56 @@ body {
   font-style: normal;
 }
 
+@keyframes loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
 header div .contenedorNav .navegador {
   display: flex;
   list-style: none;
-  margin-left: 10%;
   margin-top: 15px;
+  padding: 0%;
 }
-header div .contenedorNav .navegador li a {
+header div .contenedorNav .navegador li .botonNav {
+  display: block;
   text-align: center;
-  padding: 2vw 9vw;
+  padding: 0.5vw 2vw;
+  margin: 0vw 12.5vw;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.628);
+  border-radius: 50px;
+  background: linear-gradient(45deg, rgba(50, 28, 178, 0.7019607843), rgba(118, 31, 137, 0.7098039216));
+  color: white;
+}
+header div .contenedorNav .navegador li .botonNav:hover {
+  color: white;
+  box-shadow: 0 0 10px 1px rgba(244, 243, 246, 0.854);
+  transition: 0.1s;
 }
 
-main .contenedor .datos .contenedorSelec .msjIngreso {
-  font-size: 1.5vw;
-  font-family: sans-serif;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-main .contenedor {
+main .contenedorRegistro {
   background-color: rgba(255, 255, 255, 0.628);
   margin: auto;
   margin-top: 3%;
-  padding: 2vw;
-  width: 50%;
+  padding: 1vw;
+  width: 40%;
   height: 50%;
   text-align: center;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
-main .contenedor .titulo1 {
-  font-size: 3.5vw;
-  margin: 0;
-}
-main .contenedor .titulo2 {
-  font-size: 2.3vw;
-  margin: 1vw 0vw 2vw 0vw;
-}
-main .contenedor form {
+main .contenedorRegistro .datos {
   text-align: left;
 }
-main .contenedor form input {
+main .contenedorRegistro .datos .contenedorDatos {
+  margin-left: 28%;
+}
+main .contenedorRegistro .datos .contenedorDatos input {
   font-size: larger;
   width: 60%;
   color: #4c136c;
@@ -57,48 +66,148 @@ main .contenedor form input {
   border: none;
   border-bottom: 1.5px solid #761f89;
 }
-main .contenedor form input:focus, main .contenedor form input:hover {
+main .contenedorRegistro .datos .contenedorDatos input:focus, main .contenedorRegistro .datos .contenedorDatos input:hover {
   background-color: transparent;
   border: none;
   border-bottom: 1.5px solid #761f89;
   outline: none;
 }
-main .contenedor form label {
+main .contenedorRegistro .datos .contenedorDatos label {
   font-family: sans-serif;
   color: #761f89;
   text-align: left;
-  font-size: large;
+  font-size: medium;
 }
-main .contenedor form .checkbox {
-  width: auto;
-  margin: 3% 0%;
+main .contenedorRegistro .datos .contenedorSelec {
+  text-align: center;
 }
-main .contenedor form .boton {
-  width: 20%;
-  margin: 0%;
-  padding: 0.7vw;
+main .contenedorRegistro .datos .contenedorSelec .boton {
+  width: 30%;
+  margin: 1% 1% 0% 1%;
+  padding: 0.5vw 1vw;
   color: white;
   font-size: large;
-  background: linear-gradient(45deg, #331cb2, #761f89);
+  background: linear-gradient(45deg, #321cb2, #761f89);
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-family: "Paytone One", sans-serif;
 }
-main .contenedor form .boton:hover {
+main .contenedorRegistro .datos .contenedorSelec .boton:hover {
   transform: scale(1.1);
 }
-main .contenedor form .registrar {
+main .contenedorRegistro .datos .contenedorSelec .msjIngreso {
   font-family: sans-serif;
-  font-size: small;
+  font-size: medium;
+  font-weight: 600;
+  margin: 2%;
 }
-main .contenedor .contenedorDatos {
-  margin-left: 28%;
-}
-main .contenedor .contenedorSelec {
-  text-align: center;
+main .contenedorRegistro .datos .contenedorSelec .registrar {
+  font-family: sans-serif;
+  font-size: large;
 }
 
-main div .posicionBoton {
+main .contenedorIndex {
+  background-color: rgba(255, 255, 255, 0.628);
+  margin: auto;
+  margin-top: 3%;
+  padding: 1vw;
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+main .contenedorIndex .titulo1 {
+  margin-top: 1.5vw;
+  width: 400px;
+}
+main .contenedorIndex .titulo2 {
+  font-size: 1.9vw;
+  margin: 0vw 2vw 2vw 2vw;
+}
+main .contenedorIndex .datos {
+  text-align: left;
+}
+main .contenedorIndex .datos .contenedorDatos {
+  margin-left: 28%;
+}
+main .contenedorIndex .datos .contenedorDatos input {
+  font-size: larger;
+  width: 60%;
+  color: #4c136c;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #761f89;
+}
+main .contenedorIndex .datos .contenedorDatos input:focus, main .contenedorIndex .datos .contenedorDatos input:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid #761f89;
+  outline: none;
+}
+main .contenedorIndex .datos .contenedorDatos label {
+  font-family: sans-serif;
+  color: #761f89;
+  text-align: left;
+  font-size: medium;
+}
+main .contenedorIndex .datos .contenedorDatos .checkbox {
+  width: auto;
+  margin: 3% 0%;
+}
+main .contenedorIndex .datos .contenedorSelec {
+  text-align: center;
+}
+main .contenedorIndex .datos .contenedorSelec .boton {
+  width: 30%;
+  margin: 1% 1% 0% 1%;
+  padding: 0.5vw;
+  color: white;
+  font-size: large;
+  background: linear-gradient(45deg, #321cb2, #761f89);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Paytone One", sans-serif;
+}
+main .contenedorIndex .datos .contenedorSelec .boton:hover {
+  transform: scale(1.1);
+}
+main .contenedorIndex .datos .contenedorSelec .mensaje {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+main .contenedorIndex .datos .contenedorSelec .registrar {
+  font-family: sans-serif;
+  font-size: large;
+}
+
+main .contenedorInicio .wrapper {
+  border: 3px solid rgba(251, 255, 34, 0.8235294118);
+  padding: 4px;
+  width: 200px;
+  height: 25px;
+  margin-top: 400px;
+  margin-left: 41.5%;
+}
+main .contenedorInicio .wrapper .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main .contenedorInicio .wrapper .space .loading {
+  position: absolute;
+  background: linear-gradient(90deg, rgb(252, 176, 69) 0%, rgb(253, 29, 29) 50%, rgb(131, 58, 180) 100%);
+  width: 100%;
+  height: 100%;
+  animation: loading 3s steps(40) infinite;
+}
+main .contenedorInicio .posicionBoton {
+  display: block;
   margin-top: 60vh;
   margin-left: 38vw;
   width: auto;
@@ -106,20 +215,22 @@ main div .posicionBoton {
   color: white;
   font-size: 2.5vw;
   font-family: inherit;
-  background: linear-gradient(45deg, #331cb2, #761f89);
+  background: linear-gradient(45deg, rgba(50, 28, 178, 0.8274509804), rgba(118, 31, 137, 0.8470588235));
   border: none;
   cursor: pointer;
   border-radius: 40px;
 }
-main div .posicionBoton:hover {
+main .contenedorInicio .posicionBoton:hover {
   background-color: #7f2e9a;
   transform: rotateY(360deg);
-  background: linear-gradient(45deg, #331cb2, #761f89);
+  background: linear-gradient(45deg, rgba(50, 28, 178, 0.8274509804), rgba(118, 31, 137, 0.8470588235));
   box-shadow: 0 0 25px 3px rgba(197, 194, 204, 0.7);
   transition: 0.5s;
 }
-
-main #botonSalir {
+main .juego {
+  display: none;
+}
+main .juego #botonSalir {
   background: linear-gradient(180deg, #f52727, #f55959);
   position: absolute;
   border-radius: 30%;
@@ -131,56 +242,129 @@ main #botonSalir {
   color: white;
   font-size: 2.3vw;
 }
-main #botonSalir:hover {
+main .juego #botonSalir:hover {
   transform: scale(1.1);
   background: linear-gradient(180deg, #f61f1f, #f85252);
 }
-main .contenedorCard {
+main .juego .contenedorJuego {
   background-color: rgba(255, 255, 255, 0.628);
   margin: 3vw auto;
   padding: 1vw 2vw;
   width: 45%;
-  height: 50%;
+  height: auto;
   text-align: center;
   border-radius: 20px;
 }
-main .contenedorCard .formularioPreguntas div {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 5px;
-  height: 30vw;
+  height: auto;
   grid-template-areas: "hijo1 hijo1" "hijo2 hijo3" "hijo4 hijo5";
 }
-main .contenedorCard .formularioPreguntas div .preguntaPrincipal {
-  font-size: 2.5vw;
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .preguntaPrincipal {
+  margin: auto;
+  align-items: center;
+  font-size: xx-large;
   grid-area: hijo1;
 }
-main .contenedorCard .formularioPreguntas div .raise, main .contenedorCard .formularioPreguntas div .botonResp, main .contenedorCard .formularioPreguntas div .respuesta1 {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .botonResp {
   font-family: inherit;
-  grid-area: hijo2;
-  margin: 1.5vw 0.5vw;
+  margin: 2vw 2vw;
+  text-align: center;
+  padding: 0vw 1vw;
   border-radius: 50px;
-  font-size: 1.5vw;
+  font-size: x-large;
   background-color: rgba(20, 7, 92, 0.3803921569);
-  border: solid 2px #331cb2;
+  border: inset 4px rgb(138, 55, 211);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
 }
-main .contenedorCard .formularioPreguntas div .raise:hover, main .contenedorCard .formularioPreguntas div .botonResp:hover, main .contenedorCard .formularioPreguntas div .respuesta1:hover {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .botonResp:hover {
   background-image: url(../../images/boton3.png);
+  background-repeat: round;
   color: white;
   border-color: #331cb2;
-  box-shadow: 0 0.7em 0.4em -0.5em #1c1064;
-  transform: translateY(-0.2em);
-  transition: 0.4s;
+  transition: 0.2s;
+  transform: scale(1.1);
 }
-main .contenedorCard .formularioPreguntas div .respuesta2 {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .respuesta1 {
+  grid-area: hijo2;
+}
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .respuesta2 {
   grid-area: hijo3;
 }
-main .contenedorCard .formularioPreguntas div .respuesta3 {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .respuesta3 {
   grid-area: hijo4;
 }
-main .contenedorCard .formularioPreguntas div .respuesta4 {
+main .juego .contenedorJuego .formularioPreguntas .contenedorPreguntas .respuesta4 {
   grid-area: hijo5;
+}
+main .mostrarJuego {
+  display: block;
+}
+
+main .contenedorUsuario {
+  background-color: rgba(255, 255, 255, 0.628);
+  margin: auto;
+  margin-top: 3%;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 3fr;
+  grid-template-areas: "h1 h1" "cont1 cont2" "cont1 cont2";
+}
+main .contenedorUsuario h1 {
+  grid-area: h1;
+  margin: 0.5vw;
+}
+main .contenedorUsuario .contAvatar {
+  grid-area: cont1;
+  width: auto;
+  height: auto;
+  padding: 0.7vw 0vw;
+}
+main .contenedorUsuario .contAvatar .avatar {
+  border-radius: 290px;
+  width: 8vw;
+  margin: 0.8vw;
+  cursor: pointer;
+  filter: brightness(0.9);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
+}
+main .contenedorUsuario .contAvatar .avatar:hover {
+  filter: none;
+  transition: 0.1s;
+  transform: scale(1.2);
+}
+main .contenedorUsuario hr {
+  width: 1.5px;
+  border: none;
+  height: 21em;
+  top: 12.5em;
+  right: 50%;
+  position: absolute;
+  background-color: rgba(98, 98, 98, 0.463);
+}
+main .contenedorUsuario .cardUsuario {
+  display: block;
+  grid-area: cont2;
+  width: auto;
+  height: auto;
+  padding: 2vw;
+}
+main .contenedorUsuario .cardUsuario h2 {
+  text-align: center;
+  margin: 0vw;
+}
+main .contenedorUsuario .cardUsuario #imgSeleccionada {
+  border-radius: 300px;
+  width: 19vw;
+  margin: 2vw 1vw 1vw 1vw;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!-- link libreria AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- MAIN INDEX -->
     <!-- Inicio de sesion para entrar al juego -->
     <main>
-        <div class="contenedor">
-            <h1 class="titulo1"> PREGUNTADOS </h1>
-            <H2 class="titulo2"> ¡Bienvenidos al mejor juego de preguntas!</H2>
+        <div class="contenedorIndex">
+            <img data-aos="zoom-in" class="titulo1" src="images/titulo2.png" alt="">
+            <h2 class="titulo2"> ¡Bienvenido/a al mejor juego de preguntas!</h2>
             <form id="formIndex" class="datos">
                 <div class="contenedorDatos">
                     <label for="datoUsuario" class="form-label">Usuario:</label>
@@ -32,14 +35,18 @@
                     <button class="boton" id="ingresar" type="submit">Ingresar</button>
                     <br>
                     <p class="mensaje"></p>
-                    <span class="registrar">¿No tienes cuenta? <a href="./pages/registro.html">Registrate</a></span> 
+                    <span class="registrar">¿No tienes cuenta? <strong><a href="./pages/registro.html">Registrate</a></strong></span> 
                 </div>
             </form>
         </div>   
     </main>
 
-
+    <!-- libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+    <!-- JS del proyecto -->
     <script src="./js/index.js"></script>
-    <!-- <script src="./js/regitro.js"></script> -->
 </body>
 </html>

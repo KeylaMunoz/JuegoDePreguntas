@@ -1,15 +1,70 @@
 main{
-    .contenedor{
+    .contenedorRegistro{
+        background-color: rgba(255, 255, 255, 0.628);
+        margin: auto;
+        margin-top: 3%;
+        padding: 1vw;
+        width: 40%;
+        height: 50%;
+        text-align: center;
+        border-radius: 20px;
+        overflow: hidden; 
+        position: relative;
         .datos{
-            .contenedorSelec{
-                .msjIngreso{
-                    font-size: 1.5vw;
-                    font-family: sans-serif;
+            text-align: left;
+            .contenedorDatos{
+                margin-left: 28%;
+                input{
+                    font-size: larger;
+                    width: 60%;
+                    color: #4c136c;
                     font-weight: 600;
-                    margin-bottom: 0;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1.5px solid #761f89;
+                    &:focus,
+                    &:hover {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1.5px solid #761f89;
+                        outline: none;
+                    }
+                }
+                label{
+                    font-family: sans-serif;
+                    color: #761f89;
+                    text-align: left;
+                    font-size: medium;
                 }
             }
-
+            .contenedorSelec{
+                text-align: center;
+                .boton{
+                    width: 30%;
+                    margin: 1% 1% 0% 1%;
+                    padding: 0.5vw 1vw;
+                    color: white;
+                    font-size: large;
+                    background: linear-gradient(45deg, #321cb2, #761f89);
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    font-family: "Paytone One", sans-serif;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .msjIngreso{
+                    font-family: sans-serif;
+                    font-size: medium;
+                    font-weight: 600;
+                    margin: 2%;
+                }
+                .registrar{
+                    font-family: sans-serif;
+                    font-size: large;
+                }
+            }
         }
     }
 }

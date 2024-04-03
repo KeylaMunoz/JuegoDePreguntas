@@ -1,8 +1,10 @@
 @import "utilities/globals";
+@import "utilities/animation";
+@import "utilities/mixin";
 
 @import "components/header";
 
 @import "pages/main-registro";
 @import "pages/main-index";
 @import "pages/main-inicio";
-@import "pages/main-juego";
+@import "pages/main-usuario";

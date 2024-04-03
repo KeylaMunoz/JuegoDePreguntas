@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario</title>
+    <!-- link libreria AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- links css local -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>
         <div>
-           <nav class="contenedorNav">
-               <ul class="navegador">
-                   <li>
-                       <a href="./inicio.html">Inicio</a>
-                   </li>
-                   <li>
-                       <a href="#">Usuario</a>
-                   </li>
-                   <li>
-                       <a href="./niveles.html">Niveles</a>
-                   </li>
-               </ul>
-           </nav>
-       </div>
-   </header>
+            <nav class="contenedorNav">
+                <ul class="navegador">
+                    <li>
+                       <a class="botonNav" href="./inicio.html">Inicio</a>
+                    </li>
+                    <li>
+                       <a class="botonNav" href="#">Usuario</a>
+                    </li>
+                    <li>
+                        <a class="botonNav" href="../index.html">Salir</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- MAIN USUARIO -->
-    <!-- voy a dejar esta pagina para editar un perfil del usuario -->
     <main>
-        <div >
-            
+        <div class="contenedorUsuario">
+            <h1>¡ELIGE TU AVATAR!&#128640;</h1>
+            <div data-aos="zoom-in" class="contAvatar"> 
+            </div>
+            <hr>
+            <div class="cardUsuario">
+                <h2 class="nombreAvatar"></h2>
+                <img id="imgSeleccionada" src="../images/relleno.png" alt="Imagen seleccionada">
+            </div> 
         </div>
 
     </main>
  
+    <!-- libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/usuario.js"></script>
 </body>
 </html>

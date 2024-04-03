@@ -1,0 +1,19 @@
+@mixin botonResp{
+    font-family: inherit;
+    margin: 2vw 2vw;
+    text-align: center;
+    padding: 0vw 1vw;
+    border-radius: 50px;
+    font-size: x-large;
+    background-color: #14075c61 ;
+    border: inset 4px rgb(138, 55, 211);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
+    &:hover{
+        background-image: url(../../images/boton3.png);
+        background-repeat: round;
+        color: white;
+        border-color: #331cb2;
+        transition: 0.2s;
+        transform: scale(1.1);
+    }
+}

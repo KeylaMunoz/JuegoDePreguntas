@@ -1,6 +1,28 @@
 main{
-    div{
+    .contenedorInicio{
+        .wrapper {
+            border: 3px solid #fbff22d2;
+            padding: 4px;
+            width: 200px;
+            height: 25px;
+            margin-top: 400px;
+            margin-left: 41.5%;
+            .space {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              .loading {
+                position: absolute;
+                background: linear-gradient(90deg,  rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%,rgba(131,58,180,1) 100%);
+                width: 100%;
+                height: 100%;
+                animation: loading 3s steps(40) infinite;
+              }
+            }
+          }
         .posicionBoton{
+            display: block;
             margin-top: 60vh;
             margin-left: 38vw;
             width: auto;
@@ -8,19 +30,82 @@ main{
             color: white;
             font-size: 2.5vw;
             font-family: inherit;
-            background: linear-gradient(45deg, #331cb2, #761f89);
+            background: linear-gradient(45deg, #321cb2d3, #761f89d8);
             border: none;
             cursor: pointer;
             border-radius: 40px;
             &:hover{
                 background-color: #7f2e9a;
                 transform: rotateY(360deg);
-                background: linear-gradient(45deg, #331cb2, #761f89);
+                background: linear-gradient(45deg, #321cb2d3, #761f89d8);
                 box-shadow: 0 0 25px 3px rgba(197, 194, 204, 0.7);
                 transition: 0.5s;
-                
-                
             }
         }
+    }
+    .juego{
+        display: none;
+        #botonSalir{
+            background: linear-gradient(180deg, #f52727, #f55959);
+            position: absolute;
+            border-radius: 30%;
+            padding: 0.2vw 1vw;
+            margin-left: 71.5%;
+            margin-top: -2%;
+            border: inset 4px rgb(211, 55, 55);
+            font-family: inherit;
+            color: white;
+            font-size: 2.3vw;
+            &:hover{
+                transform: scale(1.1);
+                background: linear-gradient(180deg, #f61f1f, #f85252);
+            }
+        }
+        .contenedorJuego{
+            background-color: rgba(255, 255, 255, 0.628);
+            margin: 3vw auto;
+            padding: 1vw 2vw;
+            width: 45%;
+            height: auto;
+            text-align: center;
+            border-radius: 20px;
+            .formularioPreguntas{
+                .contenedorPreguntas{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                height: auto;
+                grid-template-areas:
+                "hijo1 hijo1"
+                "hijo2 hijo3"
+                "hijo4 hijo5";
+                    .preguntaPrincipal{
+                        margin: auto;
+                        align-items: center;
+                        font-size: xx-large;
+                        grid-area: hijo1;
+                    }
+                    .botonResp{
+                        @include botonResp;
+                    }
+                    .respuesta1{
+                        grid-area: hijo2;
+                    }
+                    .respuesta2{
+                        grid-area: hijo3;
+                    }
+                    .respuesta3{
+                        grid-area: hijo4;
+                    }
+                    .respuesta4{
+                        grid-area: hijo5;
+
+                    }
+                }
+            }
+        }
+    }
+    .mostrarJuego{
+        display: block;
     }
 }

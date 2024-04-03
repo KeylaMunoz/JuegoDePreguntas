@@ -9,17 +9,16 @@ registrarReg = document.querySelector('#registrar');
 
 //constructor de usuario
 class Usuario {
-    constructor (nombre, usuario, email, password) {
+    constructor (nombre, usuario, email, password, img) {
         this.nombre = nombre;
         this.usuario = usuario;
         this.email = email;
-        this.password = password;
+        this.password = password; 
+        this.img = img; 
     }
 }
 
-
 //crear usuario
-
 let usuarios;
 
 usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];

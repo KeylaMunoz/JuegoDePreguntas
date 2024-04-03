@@ -1,0 +1,69 @@
+main{
+    .contenedorUsuario{
+        background-color: rgba(255, 255, 255, 0.628);
+        margin: auto;
+        margin-top: 3%;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 3fr;
+        grid-template-areas: 
+        "h1 h1"
+        "cont1 cont2"
+        "cont1 cont2";
+        h1{
+            grid-area: h1;
+            margin: 0.5vw;
+        }
+        .contAvatar{
+            grid-area: cont1;
+            width: auto;
+            height: auto;
+            padding: 0.7vw 0vw;
+            .avatar{
+                border-radius: 290px;
+                width: 8vw;
+                margin: 0.8vw;
+                cursor: pointer;
+                filter: brightness(0.9);
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.779);
+                &:hover{
+                    filter: none;
+                    transition: 0.1s;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        hr{
+            width: 1.5px;
+            border: none;
+            height: 21em;
+            top: 12.5em;
+            right: 50%;
+            position: absolute;
+            background-color: rgba(98, 98, 98, 0.463);
+        }
+        .cardUsuario{
+            display: block;
+            grid-area: cont2;
+            width: auto;
+            height: auto;
+            padding: 2vw;
+            h2{
+                text-align: center;
+                margin: 0vw;
+            }
+            #imgSeleccionada{
+                border-radius: 300px;
+                width: 19vw;
+                margin: 2vw 1vw 1vw 1vw;
+                object-fit: cover;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+
+        }
+    }
+}
