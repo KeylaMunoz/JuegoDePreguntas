@@ -41,7 +41,7 @@ fetch('../db/db.json')
 });
 })
 .catch((error) => {
-    window.location.href = "./inicio.html"
+    console.error('Errorgit data:', error);
 });
 
 //traemos de LS el avatar del usuario cada vez que recargue la pagina
